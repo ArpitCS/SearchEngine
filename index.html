@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button onclick="darkMode()" id="dark-mode-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+    <div id="outer">
+        <div id="main">
+            <h1>Search Engine</h1>
+            <div id="search">
+                <input type="text" id="search-input" placeholder="Search">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="history">
+                <h2>Search History</h2>
+                <ul id="history-list"></ul>
+                <button onclick="clearHistory()">X</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
